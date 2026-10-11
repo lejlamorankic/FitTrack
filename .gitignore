@@ -1,0 +1,19 @@
+# Dependencies
+vendor/
+node_modules/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+backend/config/config.php
+
+# Logs
+backend/logs/
+*.log
+
+# Editor and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
