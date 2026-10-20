@@ -1,0 +1,182 @@
+
+<h1 class="mt-4">Exercises</h1>
+
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">
+        Exercise Management
+    </li>
+</ol>
+
+<div class="card mb-4">
+
+    <div class="card-header">
+        <i class="fas fa-dumbbell me-1"></i>
+        My Exercises
+    </div>
+
+    <div class="card-body">
+
+        <button
+            class="btn btn-primary mb-3"
+            data-bs-toggle="modal"
+            data-bs-target="#addExerciseModal">
+            <i class="fas fa-plus me-1"></i>
+            Add Exercise
+        </button>
+
+        <div class="table-responsive">
+
+            <table class="table table-bordered table-hover">
+
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Exercise</th>
+                        <th>Muscle Group</th>
+                        <th>Difficulty</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Squats</td>
+                        <td>Legs</td>
+                        <td>Beginner</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm">
+                                Edit
+                            </button>
+                            <button class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Push-ups</td>
+                        <td>Chest</td>
+                        <td>Intermediate</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm">
+                                Edit
+                            </button>
+                            <button class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Plank</td>
+                        <td>Core</td>
+                        <td>Beginner</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm">
+                                Edit
+                            </button>
+                            <button class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ADD EXERCISE MODAL -->
+<div class="modal fade" id="addExerciseModal" tabindex="-1">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    Add New Exercise
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <form id="addExerciseForm">
+
+                    <div class="mb-3">
+                        <label class="form-label">
+                            Exercise Name
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Enter exercise name"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">
+                            Muscle Group
+                        </label>
+
+                        <select class="form-select">
+                            <option>Legs</option>
+                            <option>Chest</option>
+                            <option>Back</option>
+                            <option>Arms</option>
+                            <option>Core</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">
+                            Difficulty
+                        </label>
+
+                        <select class="form-select">
+                            <option>Beginner</option>
+                            <option>Intermediate</option>
+                            <option>Advanced</option>
+                        </select>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+                    Cancel
+                </button>
+
+                <button
+                    type="button"
+                    class="btn btn-primary">
+                    Save Exercise
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

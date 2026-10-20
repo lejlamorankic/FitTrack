@@ -1,0 +1,154 @@
+
+<!-- LOGIN PAGE -->
+
+<h1 class="mt-4">Login</h1>
+
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">
+        Account Login
+    </li>
+</ol>
+
+<div class="row justify-content-center mt-4">
+
+    <div class="col-lg-6 col-md-8">
+
+        <div class="card shadow-lg border-0 rounded-lg">
+
+            <div class="card-header text-center">
+
+                <i
+                    class="fas fa-dumbbell text-primary mt-3 mb-2"
+                    style="font-size: 45px;">
+                </i>
+
+                <h3 class="font-weight-light my-3">
+                    Welcome Back!
+                </h3>
+
+                <p class="text-muted">
+                    Sign in to your FitTrack account
+                </p>
+
+            </div>
+
+            <div class="card-body">
+
+                <form id="loginForm">
+
+                    <!-- EMAIL -->
+                    <div class="mb-3">
+
+                        <label
+                            for="loginEmail"
+                            class="form-label">
+                            Email Address
+                        </label>
+
+                        <div class="input-group">
+
+                            <span class="input-group-text">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+
+                            <input
+                                type="email"
+                                id="loginEmail"
+                                name="email"
+                                class="form-control"
+                                placeholder="Enter your email"
+                                autocomplete="email"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PASSWORD -->
+                    <div class="mb-3">
+
+                        <label
+                            for="loginPassword"
+                            class="form-label">
+                            Password
+                        </label>
+
+                        <div class="input-group">
+
+                            <span class="input-group-text">
+                                <i class="fas fa-lock"></i>
+                            </span>
+
+                            <input
+                                type="password"
+                                id="loginPassword"
+                                name="password"
+                                class="form-control"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                    <!-- REMEMBER ME -->
+                    <div class="form-check mb-3">
+
+                        <input
+                            type="checkbox"
+                            id="rememberMe"
+                            class="form-check-input">
+
+                        <label
+                            for="rememberMe"
+                            class="form-check-label">
+                            Remember me
+                        </label>
+
+                    </div>
+
+                    <!-- LOGIN BUTTON -->
+                    <div class="d-grid mt-4">
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary btn-lg">
+                            <i class="fas fa-sign-in-alt me-2"></i>
+                            Login
+                        </button>
+
+                    </div>
+
+                </form>
+
+                <div class="text-center mt-3">
+
+                    <small class="text-muted">
+                        Authentication will be enabled
+                        in a future milestone.
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="card-footer text-center py-3">
+
+                <div class="small">
+
+                    Don't have an account?
+
+                    <a href="#register">
+                        Create an account
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
