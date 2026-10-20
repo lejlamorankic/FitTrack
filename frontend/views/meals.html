@@ -1,0 +1,391 @@
+
+<!-- MEALS PAGE -->
+
+<h1 class="mt-4">Meals</h1>
+
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">
+        Meal & Nutrition Tracking
+    </li>
+</ol>
+
+<div class="alert alert-info">
+    <i class="fas fa-utensils me-2"></i>
+    Track your daily meals, calories and protein intake.
+</div>
+
+<!-- NUTRITION STATISTICS -->
+<div class="row mb-3">
+
+    <div class="col-md-4">
+        <div class="card bg-primary text-white mb-3">
+            <div class="card-body">
+                <h6>Today's Calories</h6>
+                <h2>1850 kcal</h2>
+                <small>Demo data</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card bg-success text-white mb-3">
+            <div class="card-body">
+                <h6>Today's Protein</h6>
+                <h2>95 g</h2>
+                <small>Demo data</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card bg-warning text-white mb-3">
+            <div class="card-body">
+                <h6>Meals Logged</h6>
+                <h2>3</h2>
+                <small>Demo data</small>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- MEALS TABLE -->
+<div class="card mb-4">
+
+    <div class="card-header">
+        <i class="fas fa-utensils me-1"></i>
+        My Meal History
+    </div>
+
+    <div class="card-body">
+
+        <button
+            type="button"
+            class="btn btn-primary mb-3"
+            data-bs-toggle="modal"
+            data-bs-target="#addMealModal">
+
+            <i class="fas fa-plus me-1"></i>
+            Add Meal
+        </button>
+
+        <div class="table-responsive">
+
+            <table class="table table-bordered table-hover">
+
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Meal Name</th>
+                        <th>Meal Type</th>
+                        <th>Calories</th>
+                        <th>Protein</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Oatmeal with Banana</td>
+                        <td>Breakfast</td>
+                        <td>350 kcal</td>
+                        <td>12 g</td>
+                        <td>2026-10-17</td>
+                        <td>
+                            <button
+                                type="button"
+                                class="btn btn-warning btn-sm">
+                                Edit
+                            </button>
+
+                            <button
+                                type="button"
+                                class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Grilled Chicken with Rice</td>
+                        <td>Lunch</td>
+                        <td>650 kcal</td>
+                        <td>45 g</td>
+                        <td>2026-10-17</td>
+                        <td>
+                            <button
+                                type="button"
+                                class="btn btn-warning btn-sm">
+                                Edit
+                            </button>
+
+                            <button
+                                type="button"
+                                class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Salmon with Vegetables</td>
+                        <td>Dinner</td>
+                        <td>850 kcal</td>
+                        <td>38 g</td>
+                        <td>2026-10-17</td>
+                        <td>
+                            <button
+                                type="button"
+                                class="btn btn-warning btn-sm">
+                                Edit
+                            </button>
+
+                            <button
+                                type="button"
+                                class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- RECIPE INSPIRATION -->
+<div class="card mb-4">
+
+    <div class="card-header">
+        <i class="fas fa-lightbulb me-1"></i>
+        Recipe Inspiration
+    </div>
+
+    <div class="card-body">
+
+        <div class="row align-items-center">
+
+            <div class="col-md-8">
+
+                <h5>Discover Healthy Meal Ideas</h5>
+
+                <p>
+                    Looking for something new to cook?
+                    Explore recipes and discover meal
+                    ideas for your fitness journey.
+                </p>
+
+                <p class="text-muted">
+                    This feature will be connected to
+                    TheMealDB external API in a future
+                    milestone.
+                </p>
+
+                <button
+                    type="button"
+                    class="btn btn-success"
+                    disabled>
+
+                    <i class="fas fa-search me-1"></i>
+                    Find Recipes (Coming Soon)
+                </button>
+
+            </div>
+
+            <div class="col-md-4 text-center">
+
+                <i
+                    class="fas fa-bowl-food text-success"
+                    style="font-size: 80px;">
+                </i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ADD MEAL MODAL -->
+<div
+    class="modal fade"
+    id="addMealModal"
+    tabindex="-1"
+    aria-labelledby="addMealModalLabel"
+    aria-hidden="true">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5
+                    class="modal-title"
+                    id="addMealModalLabel">
+                    Add New Meal
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <form id="addMealForm">
+
+                    <!-- MEAL NAME -->
+                    <div class="mb-3">
+
+                        <label
+                            for="mealName"
+                            class="form-label">
+                            Meal Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="mealName"
+                            class="form-control"
+                            placeholder="Enter meal name"
+                            required>
+
+                    </div>
+
+                    <!-- MEAL TYPE -->
+                    <div class="mb-3">
+
+                        <label
+                            for="mealType"
+                            class="form-label">
+                            Meal Type
+                        </label>
+
+                        <select
+                            id="mealType"
+                            class="form-select"
+                            required>
+
+                            <option value="">
+                                Select meal type
+                            </option>
+
+                            <option value="Breakfast">
+                                Breakfast
+                            </option>
+
+                            <option value="Lunch">
+                                Lunch
+                            </option>
+
+                            <option value="Dinner">
+                                Dinner
+                            </option>
+
+                            <option value="Snack">
+                                Snack
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- CALORIES -->
+                    <div class="mb-3">
+
+                        <label
+                            for="mealCalories"
+                            class="form-label">
+                            Calories (kcal)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="mealCalories"
+                            class="form-control"
+                            min="0"
+                            placeholder="Enter calories"
+                            required>
+
+                    </div>
+
+                    <!-- PROTEIN -->
+                    <div class="mb-3">
+
+                        <label
+                            for="mealProtein"
+                            class="form-label">
+                            Protein (g)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="mealProtein"
+                            class="form-control"
+                            min="0"
+                            step="0.1"
+                            placeholder="Enter protein"
+                            required>
+
+                    </div>
+
+                    <!-- DATE -->
+                    <div class="mb-3">
+
+                        <label
+                            for="mealDate"
+                            class="form-label">
+                            Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="mealDate"
+                            class="form-control"
+                            required>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+                    Cancel
+                </button>
+
+                <button
+                    type="submit"
+                    form="addMealForm"
+                    class="btn btn-primary">
+                    Save Meal
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

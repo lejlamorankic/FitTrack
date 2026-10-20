@@ -1,0 +1,452 @@
+
+<!-- PROFILE PAGE -->
+
+<h1 class="mt-4">My Profile</h1>
+
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">
+        Account & Fitness Profile
+    </li>
+</ol>
+
+<div class="alert alert-info">
+    <i class="fas fa-user-circle me-2"></i>
+    Manage your personal information and fitness goals.
+</div>
+
+<!-- PROFILE OVERVIEW -->
+<div class="row mb-4">
+
+    <div class="col-lg-4 mb-3">
+
+        <div class="card h-100">
+
+            <div class="card-body text-center">
+
+                <i
+                    class="fas fa-user-circle text-primary mb-3"
+                    style="font-size: 90px;">
+                </i>
+
+                <h4>Alex Johnson</h4>
+
+                <p class="text-muted">
+                    FitTrack Member
+                </p>
+
+                <span class="badge bg-success">
+                    Active Account
+                </span>
+
+                <hr>
+
+                <p class="mb-2">
+                    <i class="fas fa-envelope me-2"></i>
+                    alex@example.com
+                </p>
+
+                <p class="mb-2">
+                    <i class="fas fa-calendar-alt me-2"></i>
+                    Member since October 2026
+                </p>
+
+                <p class="text-muted mt-3 mb-0">
+                    Demo user profile
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-8 mb-3">
+
+        <div class="card h-100">
+
+            <div class="card-header">
+                <i class="fas fa-user-edit me-1"></i>
+                Personal Information
+            </div>
+
+            <div class="card-body">
+
+                <form id="profileForm">
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+
+                            <label
+                                for="profileFirstName"
+                                class="form-label">
+                                First Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="profileFirstName"
+                                class="form-control"
+                                value="Alex"
+                                required>
+
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+
+                            <label
+                                for="profileLastName"
+                                class="form-label">
+                                Last Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="profileLastName"
+                                class="form-control"
+                                value="Johnson"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label
+                            for="profileEmail"
+                            class="form-label">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="profileEmail"
+                            class="form-control"
+                            value="alex@example.com"
+                            required>
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label
+                            for="profileAge"
+                            class="form-label">
+                            Age
+                        </label>
+
+                        <input
+                            type="number"
+                            id="profileAge"
+                            class="form-control"
+                            value="25"
+                            min="1"
+                            max="120">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label
+                            for="profileGender"
+                            class="form-label">
+                            Gender
+                        </label>
+
+                        <select
+                            id="profileGender"
+                            class="form-select">
+
+                            <option value="">
+                                Prefer not to say
+                            </option>
+
+                            <option value="Female">
+                                Female
+                            </option>
+
+                            <option value="Male" selected>
+                                Male
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="btn btn-primary">
+                        <i class="fas fa-save me-1"></i>
+                        Save Profile Changes
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FITNESS INFORMATION -->
+<div class="card mb-4">
+
+    <div class="card-header">
+        <i class="fas fa-dumbbell me-1"></i>
+        Fitness Information
+    </div>
+
+    <div class="card-body">
+
+        <div class="row">
+
+            <div class="col-md-6 mb-3">
+
+                <label
+                    for="profileHeight"
+                    class="form-label">
+                    Height (cm)
+                </label>
+
+                <input
+                    type="number"
+                    id="profileHeight"
+                    class="form-control"
+                    value="175"
+                    min="50"
+                    max="250">
+
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+                <label
+                    for="profileWeight"
+                    class="form-label">
+                    Current Weight (kg)
+                </label>
+
+                <input
+                    type="number"
+                    id="profileWeight"
+                    class="form-control"
+                    value="58"
+                    min="1"
+                    max="500"
+                    step="0.1">
+
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+                <label
+                    for="profileGoalWeight"
+                    class="form-label">
+                    Goal Weight (kg)
+                </label>
+
+                <input
+                    type="number"
+                    id="profileGoalWeight"
+                    class="form-control"
+                    value="55"
+                    min="1"
+                    max="500"
+                    step="0.1">
+
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+                <label
+                    for="profileActivityLevel"
+                    class="form-label">
+                    Activity Level
+                </label>
+
+                <select
+                    id="profileActivityLevel"
+                    class="form-select">
+
+                    <option value="Sedentary">
+                        Sedentary
+                    </option>
+
+                    <option value="Lightly Active">
+                        Lightly Active
+                    </option>
+
+                    <option value="Moderately Active" selected>
+                        Moderately Active
+                    </option>
+
+                    <option value="Very Active">
+                        Very Active
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <button
+            type="button"
+            class="btn btn-success">
+            <i class="fas fa-save me-1"></i>
+            Save Fitness Information
+        </button>
+
+    </div>
+
+</div>
+
+<!-- FITNESS GOALS -->
+<div class="card mb-4">
+
+    <div class="card-header">
+        <i class="fas fa-bullseye me-1"></i>
+        My Fitness Goals
+    </div>
+
+    <div class="card-body">
+
+        <div class="row">
+
+            <div class="col-md-6 mb-3">
+
+                <label
+                    for="profileWorkoutGoal"
+                    class="form-label">
+                    Weekly Workout Goal
+                </label>
+
+                <input
+                    type="number"
+                    id="profileWorkoutGoal"
+                    class="form-control"
+                    value="5"
+                    min="1"
+                    max="7">
+
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+                <label
+                    for="profileWaterGoal"
+                    class="form-label">
+                    Daily Water Goal (ml)
+                </label>
+
+                <input
+                    type="number"
+                    id="profileWaterGoal"
+                    class="form-control"
+                    value="2000"
+                    min="1">
+
+            </div>
+
+        </div>
+
+        <button
+            type="button"
+            class="btn btn-primary">
+            <i class="fas fa-save me-1"></i>
+            Save Fitness Goals
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ACCOUNT SECURITY -->
+<div class="card mb-4">
+
+    <div class="card-header">
+        <i class="fas fa-lock me-1"></i>
+        Account Security
+    </div>
+
+    <div class="card-body">
+
+        <h5>Change Password</h5>
+
+        <p class="text-muted">
+            Keep your account secure by using
+            a strong password.
+        </p>
+
+        <form id="changePasswordForm">
+
+            <div class="mb-3">
+
+                <label
+                    for="currentPassword"
+                    class="form-label">
+                    Current Password
+                </label>
+
+                <input
+                    type="password"
+                    id="currentPassword"
+                    class="form-control"
+                    autocomplete="current-password"
+                    placeholder="Enter current password">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label
+                    for="newPassword"
+                    class="form-label">
+                    New Password
+                </label>
+
+                <input
+                    type="password"
+                    id="newPassword"
+                    class="form-control"
+                    autocomplete="new-password"
+                    placeholder="Enter new password">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label
+                    for="confirmNewPassword"
+                    class="form-label">
+                    Confirm New Password
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmNewPassword"
+                    class="form-control"
+                    autocomplete="new-password"
+                    placeholder="Confirm new password">
+
+            </div>
+
+            <button
+                type="button"
+                class="btn btn-warning">
+                <i class="fas fa-key me-1"></i>
+                Change Password
+            </button>
+
+        </form>
+
+    </div>
+
+</div>

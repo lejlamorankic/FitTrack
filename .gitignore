@@ -1,3 +1,4 @@
+
 # Dependencies
 vendor/
 node_modules/
@@ -6,10 +7,14 @@ node_modules/
 .env
 .env.*
 !.env.example
+
+# Private configuration
 backend/config/config.php
+backend/config/database.php
 
 # Logs
-backend/logs/
+backend/logs/*
+!backend/logs/.gitkeep
 *.log
 
 # Editor and system files
@@ -17,3 +22,8 @@ backend/logs/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp

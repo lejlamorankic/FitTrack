@@ -1,0 +1,229 @@
+
+<!-- REGISTER PAGE -->
+
+<h1 class="mt-4">Register</h1>
+
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">
+        Create an Account
+    </li>
+</ol>
+
+<div class="row justify-content-center mt-4">
+
+    <div class="col-lg-7 col-md-9">
+
+        <div class="card shadow-lg border-0 rounded-lg">
+
+            <div class="card-header text-center">
+
+                <i
+                    class="fas fa-user-plus text-success mt-3 mb-2"
+                    style="font-size: 45px;">
+                </i>
+
+                <h3 class="font-weight-light my-3">
+                    Join FitTrack
+                </h3>
+
+                <p class="text-muted">
+                    Create your account and start
+                    tracking your fitness journey.
+                </p>
+
+            </div>
+
+            <div class="card-body">
+
+                <form id="registerForm">
+
+                    <!-- FULL NAME -->
+                    <div class="mb-3">
+
+                        <label
+                            for="registerName"
+                            class="form-label">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="registerName"
+                            name="full_name"
+                            class="form-control"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required>
+
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="mb-3">
+
+                        <label
+                            for="registerEmail"
+                            class="form-label">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="registerEmail"
+                            name="email"
+                            class="form-control"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required>
+
+                    </div>
+
+                    <!-- PASSWORD -->
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+
+                            <label
+                                for="registerPassword"
+                                class="form-label">
+                                Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="registerPassword"
+                                name="password"
+                                class="form-control"
+                                placeholder="Create password"
+                                autocomplete="new-password"
+                                minlength="8"
+                                required>
+
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+
+                            <label
+                                for="confirmPassword"
+                                class="form-label">
+                                Confirm Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirm_password"
+                                class="form-control"
+                                placeholder="Confirm password"
+                                autocomplete="new-password"
+                                minlength="8"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                    <!-- FITNESS GOAL -->
+                    <div class="mb-3">
+
+                        <label
+                            for="registerGoal"
+                            class="form-label">
+                            Primary Fitness Goal
+                        </label>
+
+                        <select
+                            id="registerGoal"
+                            name="fitness_goal"
+                            class="form-select">
+
+                            <option value="">
+                                Select your fitness goal
+                            </option>
+
+                            <option value="lose_weight">
+                                Lose Weight
+                            </option>
+
+                            <option value="gain_weight">
+                                Gain Weight
+                            </option>
+
+                            <option value="build_muscle">
+                                Build Muscle
+                            </option>
+
+                            <option value="maintain_fitness">
+                                Maintain Fitness
+                            </option>
+
+                            <option value="improve_endurance">
+                                Improve Endurance
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- TERMS -->
+                    <div class="form-check mb-3">
+
+                        <input
+                            type="checkbox"
+                            id="registerTerms"
+                            class="form-check-input"
+                            required>
+
+                        <label
+                            for="registerTerms"
+                            class="form-check-label">
+                            I agree to the Terms and Conditions
+                        </label>
+
+                    </div>
+
+                    <!-- REGISTER BUTTON -->
+                    <div class="d-grid mt-4">
+
+                        <button
+                            type="submit"
+                            class="btn btn-success btn-lg">
+
+                            <i class="fas fa-user-plus me-2"></i>
+                            Create Account
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+                <div class="text-center mt-3">
+
+                    <small class="text-muted">
+                        Account registration will be enabled
+                        in a future milestone.
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="card-footer text-center py-3">
+
+                <div class="small">
+
+                    Already have an account?
+
+                    <a href="#login">
+                        Login here
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,334 @@
+
+<!-- HYDRATION PAGE -->
+
+<h1 class="mt-4">Hydration</h1>
+
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">
+        Water Intake Tracking
+    </li>
+</ol>
+
+<div class="alert alert-info">
+    <i class="fas fa-tint me-2"></i>
+    Stay hydrated! Track your daily water intake and reach
+    your hydration goals.
+</div>
+
+<!-- HYDRATION STATISTICS -->
+<div class="row mb-3">
+
+    <div class="col-md-4">
+        <div class="card bg-primary text-white mb-3">
+            <div class="card-body">
+                <h6>Water Consumed Today</h6>
+                <h2>1500 ml</h2>
+                <small>Demo data</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card bg-success text-white mb-3">
+            <div class="card-body">
+                <h6>Daily Water Goal</h6>
+                <h2>2000 ml</h2>
+                <small>Demo data</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card bg-info text-white mb-3">
+            <div class="card-body">
+                <h6>Remaining Water</h6>
+                <h2>500 ml</h2>
+                <small>Demo data</small>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- DAILY HYDRATION PROGRESS -->
+<div class="card mb-4">
+
+    <div class="card-header">
+        <i class="fas fa-chart-line me-1"></i>
+        Daily Hydration Progress
+    </div>
+
+    <div class="card-body">
+
+        <h5>Today's Progress</h5>
+
+        <p>
+            You have consumed
+            <strong>1500 ml</strong>
+            out of your daily goal of
+            <strong>2000 ml</strong>.
+        </p>
+
+        <div
+            class="progress mb-3"
+            style="height: 25px;">
+
+            <div
+                class="progress-bar bg-info"
+                role="progressbar"
+                style="width: 75%;"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100">
+                75%
+            </div>
+
+        </div>
+
+        <p class="text-muted mb-0">
+            Only 500 ml left to reach your daily goal!
+        </p>
+
+    </div>
+
+</div>
+
+<!-- WATER INTAKE HISTORY -->
+<div class="card mb-4">
+
+    <div class="card-header">
+        <i class="fas fa-history me-1"></i>
+        Water Intake History
+    </div>
+
+    <div class="card-body">
+
+        <button
+            type="button"
+            class="btn btn-primary mb-3"
+            data-bs-toggle="modal"
+            data-bs-target="#addWaterModal">
+
+            <i class="fas fa-plus me-1"></i>
+            Add Water Intake
+        </button>
+
+        <div class="table-responsive">
+
+            <table class="table table-bordered table-hover">
+
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>500 ml</td>
+                        <td>2026-10-17</td>
+                        <td>08:30</td>
+                        <td>
+                            <button
+                                type="button"
+                                class="btn btn-warning btn-sm">
+                                Edit
+                            </button>
+
+                            <button
+                                type="button"
+                                class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>250 ml</td>
+                        <td>2026-10-17</td>
+                        <td>11:00</td>
+                        <td>
+                            <button
+                                type="button"
+                                class="btn btn-warning btn-sm">
+                                Edit
+                            </button>
+
+                            <button
+                                type="button"
+                                class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>500 ml</td>
+                        <td>2026-10-17</td>
+                        <td>14:15</td>
+                        <td>
+                            <button
+                                type="button"
+                                class="btn btn-warning btn-sm">
+                                Edit
+                            </button>
+
+                            <button
+                                type="button"
+                                class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>250 ml</td>
+                        <td>2026-10-17</td>
+                        <td>17:30</td>
+                        <td>
+                            <button
+                                type="button"
+                                class="btn btn-warning btn-sm">
+                                Edit
+                            </button>
+
+                            <button
+                                type="button"
+                                class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ADD WATER MODAL -->
+<div
+    class="modal fade"
+    id="addWaterModal"
+    tabindex="-1"
+    aria-labelledby="addWaterModalLabel"
+    aria-hidden="true">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5
+                    class="modal-title"
+                    id="addWaterModalLabel">
+                    Add Water Intake
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <form id="addWaterForm">
+
+                    <!-- AMOUNT -->
+                    <div class="mb-3">
+
+                        <label
+                            for="waterAmount"
+                            class="form-label">
+                            Water Amount (ml)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="waterAmount"
+                            class="form-control"
+                            min="1"
+                            placeholder="Enter amount in ml"
+                            required>
+
+                    </div>
+
+                    <!-- DATE -->
+                    <div class="mb-3">
+
+                        <label
+                            for="waterDate"
+                            class="form-label">
+                            Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="waterDate"
+                            class="form-control"
+                            required>
+
+                    </div>
+
+                    <!-- TIME -->
+                    <div class="mb-3">
+
+                        <label
+                            for="waterTime"
+                            class="form-label">
+                            Time
+                        </label>
+
+                        <input
+                            type="time"
+                            id="waterTime"
+                            class="form-control"
+                            required>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+                    Cancel
+                </button>
+
+                <button
+                    type="submit"
+                    form="addWaterForm"
+                    class="btn btn-primary">
+                    Save Water Intake
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
