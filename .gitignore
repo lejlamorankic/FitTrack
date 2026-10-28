@@ -8,9 +8,9 @@ node_modules/
 .env.*
 !.env.example
 
-# Private configuration
-backend/config/config.php
-backend/config/database.php
+# Private database configuration
+/backend/config/config.php
+
 
 # Logs
 backend/logs/*
